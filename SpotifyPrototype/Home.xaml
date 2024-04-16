@@ -1,0 +1,27 @@
+﻿<Window x:Class="SpotifyPrototype.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpotifyPrototype"
+        mc:Ignorable="d"
+        Title="Home" Height="450" Width="350">
+    <Grid>
+        <Button Content="Home" Margin="10,381,234,31"/>
+        <Button Content="Search" Margin="123,381,121,31"/>
+        <Button Content="My Library" Margin="234,381,10,31"/>
+        <Image Height="100" Width="100" Margin="132,167,118,167"/>
+        <Image Height="100" Width="100" Margin="243,167,7,167"/>
+        <Image Height="100" Width="100" Margin="11,167,239,167"/>
+        <Image Height="100" Width="100" Margin="243,19,7,315"/>
+        <Image Height="100" Width="100" Margin="132,19,118,315"/>
+        <Image Height="100" Width="100" Margin="11,19,239,315"/>
+        <Label Content="Song 1" Background = "Gray" Margin="28,132,256,277"/>
+        <Label Content="Song 2" Background = "Gray" Margin="149,132,135,277"/>
+        <Label Content="Song 3" Background = "Gray" Margin="260,132,24,277"/>
+        <Label Content="Playlist 1" Background = "Gray" Margin="28,300,256,109"/>
+        <Label Content="Playlist 2" Background = "Gray" Margin="149,300,135,109"/>
+        <Label Content="Playlist 3" Background = "Gray" Margin="260,300,24,109"/>
+
+    </Grid>
+</Window>

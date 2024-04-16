@@ -1,0 +1,27 @@
+﻿<Window x:Class="SpotifyPrototype.SignUp"
+                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="450" Width="350">
+    <Grid>
+
+        <TextBlock Text="Sign up to start listening" Margin="67,59,0,349" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Grid.Row="0" Width="232"/>
+
+        <StackPanel Margin="42,106,40,62">
+            <TextBox x:Name="txtUsername" Text="Email" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" Foreground="Gray" TextChanged="txtUsername_TextChanged"/>
+            <TextBox x:Name="txtPassword" Text="Password" Foreground="Gray" />
+            <Label Content=""/>
+            <Button Content="Sign Up" Click="SignUpButton_Click" Width="200"/>
+        </StackPanel>
+        <TextBlock x:Name="lblMessage" Text="" Foreground="Red" Margin="0,290,20,0" Height="13" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+    </Grid>
+</Window>
+
