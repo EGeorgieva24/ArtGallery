@@ -3,14 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Login" Height="450" Width="350">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF4EA742" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
 
-        <TextBlock Text="Sign up to start listening" Margin="67,59,0,349" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Grid.Row="0" Width="232"/>
+        <TextBlock Text="Sign up to start listening" Margin="67,59,0,349" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Grid.Row="0" Width="232" Foreground="White"/>
 
         <StackPanel Margin="42,106,40,62">
-            <TextBox x:Name="txtUsername" Text="Email" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" Foreground="Gray" TextChanged="txtUsername_TextChanged"/>
-            <TextBox x:Name="txtPassword" Text="Password" Foreground="Gray" />
+            <TextBox x:Name="txtUsername" Text="Username" Foreground="Gray"  Background="#FF020202"/>
+            <TextBox x:Name="txtEmail" Text="Email"  Foreground="Gray"  Background="#FF020202"/>
+            <TextBox x:Name="txtPassword" Text="Password" Foreground="Gray" Background="#FF0A0A0A" />
             <Label Content=""/>
-            <Button Content="Sign Up" Click="SignUpButton_Click" Width="200"/>
+            <Button Content="Sign Up" Click="SignUpButton_Click" Width="129" Foreground="#FFFDFDFD" Background="#FF040404" Height="25"/>
         </StackPanel>
         <TextBlock x:Name="lblMessage" Text="" Foreground="Red" Margin="0,290,20,0" Height="13" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
             <TextBlock.RenderTransform>
