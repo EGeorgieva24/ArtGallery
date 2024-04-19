@@ -1,25 +1,25 @@
 ﻿<Window x:Class="SpotifyPrototype.MainWindow"
        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Login" Height="450" Width="350">
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       Title="Login" Height="450" Width="350">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black"/>
-                <GradientStop Color="#FF4EA742" Offset="1"/>
+                <GradientStop Color="#FFF3E5C4"/>
+                <GradientStop Color="#FFB4A0E0" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
 
-        <TextBlock Text="Music for everyone" Margin="90,59,0,349" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Grid.Row="0" Foreground="White"/>
+        <TextBlock Text="Art for everyone" Margin="0,58,0,350" FontSize="22" HorizontalAlignment="Center" Grid.Row="0" Foreground="#FF040000" FontFamily="MingLiU_HKSCS-ExtB" Width="187" FontWeight="Bold"/>
 
         <StackPanel Margin="42,106,40,62">
-            <TextBox x:Name="txtUsernameOrEmail" Text="Username or Email"  Foreground="Gray"  Background="Black"/>
-            <TextBox x:Name="txtPassword" Text="Password" Foreground="Gray" Background="Black" />
+            <TextBox x:Name="txtUsernameOrEmail" Text="Username or Email" Foreground="Gray" Background="#FFD8CABD"/>
+            <TextBox x:Name="txtPassword" Text="Password" Foreground="Gray" Background="#FFD8CABD" />
             <Label Content=""/>
-            <Button Content="Login" Click="LoginButton_Click" Width="200" Background="Black" Foreground="White"/>
+            <Button Content="Login" Click="LoginButton_Click" Width="200" Background="#FFB4A0E0" Foreground="White"/>
         </StackPanel>
 
-        <Button x:Name="SignUpButton" Content="Sign Up" Click="SignUpButton_Click" HorizontalAlignment="Left" Margin="136,316,0,95" Width="70" FontSize="10" Foreground="White" Background="#FF040000"/>
+        <Button x:Name="SignUpButton" Content="Sign Up" Click="SignUpButton_Click" HorizontalAlignment="Left" Margin="136,316,0,95" Width="70" FontSize="10" Foreground="White" Background="#FF7D80A7"/>
         <TextBlock x:Name="lblMessage" Text="" Foreground="Red" Margin="0,290,20,0" Height="13" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
             <TextBlock.RenderTransform>
                 <TransformGroup>

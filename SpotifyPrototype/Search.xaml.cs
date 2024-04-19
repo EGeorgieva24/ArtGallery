@@ -15,23 +15,13 @@ using System.Windows.Shapes;
 namespace SpotifyPrototype
 {
     /// <summary>
-    /// Interaction logic for Home.xaml
+    /// Interaction logic for Search.xaml
     /// </summary>
-    public partial class Home : Window
+    public partial class Search : Window
     {
-        public Home()
+        public Search()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

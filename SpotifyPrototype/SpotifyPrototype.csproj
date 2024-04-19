@@ -61,6 +61,9 @@
     <Compile Include="My Library.xaml.cs">
       <DependentUpon>My Library.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Search.xaml.cs">
+      <DependentUpon>Search.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>
@@ -81,6 +84,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="My Library.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Search.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -114,6 +121,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Multimedia__28114_29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="gratis-png-logo-house-home-building-iconos-de-computadora-house-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="magnifying-glass-icon-isolated-on-white-background-search-illustration-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="book-read-library-study-line-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

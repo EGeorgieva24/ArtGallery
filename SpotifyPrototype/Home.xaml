@@ -7,21 +7,34 @@
         mc:Ignorable="d"
         Title="Home" Height="450" Width="350">
     <Grid>
-        <Button Content="Home" Margin="10,381,234,31"/>
-        <Button Content="Search" Margin="123,381,121,31"/>
-        <Button Content="My Library" Margin="234,381,10,31"/>
-        <Image Height="100" Width="100" Margin="132,167,118,167"/>
-        <Image Height="100" Width="100" Margin="243,167,7,167"/>
-        <Image Height="100" Width="100" Margin="11,167,239,167"/>
-        <Image Height="100" Width="100" Margin="243,19,7,315"/>
-        <Image Height="100" Width="100" Margin="132,19,118,315"/>
-        <Image Height="100" Width="100" Margin="11,19,239,315"/>
-        <Label Content="Song 1" Background = "Gray" Margin="28,132,256,277"/>
-        <Label Content="Song 2" Background = "Gray" Margin="149,132,135,277"/>
-        <Label Content="Song 3" Background = "Gray" Margin="260,132,24,277"/>
-        <Label Content="Playlist 1" Background = "Gray" Margin="28,300,256,109"/>
-        <Label Content="Playlist 2" Background = "Gray" Margin="149,300,135,109"/>
-        <Label Content="Playlist 3" Background = "Gray" Margin="260,300,24,109"/>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#C8E4AF" Offset="0"/>
+                <GradientStop Color="#F2E9E1" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
 
+        <Label Content="Hi, lovely User! ~&#xD;&#xA;Here you will find all your favorite art pieces :3 ! ~&#xD;&#xA;Enjoy ~~~" Margin="10,10,10,338" Foreground="#394240" Background="Transparent" FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Center"/>
+        <Label Content="Some boards filled with your favorites ~~~" Margin="10,190,10,212" Foreground="#394240" Background="Transparent" FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Center"/>
+        
+        <Button Content="" Margin="35,395,281,10" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Multimedia__28114_29.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" Margin="154,396,158,11" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="/book-read-library-study-line-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" Margin="273,395,37,11" Foreground="#394240" BorderBrush="#394240" Click="Button_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="/magnifying-glass-icon-isolated-on-white-background-search-illustration-vector.jpg"/>
+            </Button.Background>
+        </Button>
+
+        <Image Height="100" Width="100" Margin="10,70,240,270"/>
+        <Image Height="100" Width="100" Margin="120,70,130,270"/>
+        <Image Height="100" Width="100" Margin="230,70,20,270"/>
     </Grid>
 </Window>
