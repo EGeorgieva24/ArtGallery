@@ -21,7 +21,7 @@ namespace SpotifyPrototype
     /// </summary>
     public partial class MainWindow : Window
     {
-        private const string connectionString = "Data Source=YOUR_SERVER;Initial Catalog=SpotifyPrototype;Integrated Security=True";
+        SqlConnection con = new SqlConnection(@"Data Source=LAB108PC13\SQLEXPRESS;Initial Catalog=pinterestPrototype; Integrated Security = True");
 
         public MainWindow()
         {
@@ -65,35 +65,34 @@ namespace SpotifyPrototype
     {
     bool isAuthenticated = false;
 
-        using (SqlConnection connection = new SqlConnection(connectionString))
-     {
-        string query = "SELECT COUNT(*) FROM Users WHERE (Username = @UsernameOrEmail OR Email = @UsernameOrEmail) AND PasswordHash = @PasswordHash";
+        string query = "SELECT COUNT(*) FROM user_info WHERE (username = @UsernameOrEmail OR email = @UsernameOrEmail) AND password = @Password";
 
-        SqlCommand command = new SqlCommand(query, connection);
+        SqlCommand command = new SqlCommand(query, con);
         command.Parameters.AddWithValue("@UsernameOrEmail", usernameOrEmail);
-        command.Parameters.AddWithValue("@PasswordHash", HashPassword(password));
+        command.Parameters.AddWithValue("@Password", password);
 
         try
         {
-            connection.Open();
+            con.Open();
             int userCount = (int)command.ExecuteScalar();
             isAuthenticated = userCount == 1;
+            con.Close();
         }
         catch (Exception ex)
         {
             MessageBox.Show("An error occurred: " + ex.Message);
         }
-     }
+     
 
     return isAuthenticated;
     }
 
-    private string HashPassword(string password)
+    /*private string HashPassword(string password)
     {
     // Implement password hashing algorithm (e.g., using bcrypt or SHA-256)
     // For simplicity, let's assume the password is stored as plaintext in the database
     return password;
-    }
+    }*/
     
         private void SignUpButton_Click(object sender, RoutedEventArgs e)
         {

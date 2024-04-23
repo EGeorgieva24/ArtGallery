@@ -10,24 +10,24 @@
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                 <GradientStop Color="#C8E4AF" Offset="0"/>
-                <GradientStop Color="#F2E9E1" Offset="1"/>
+                <GradientStop Color="#FFB4A0E0" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
 
         <Label Content="Hi, lovely User! ~&#xD;&#xA;Here you will find all your favorite art pieces :3 ! ~&#xD;&#xA;Enjoy ~~~" Margin="10,10,10,338" Foreground="#394240" Background="Transparent" FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Center"/>
-        <Label Content="Some boards filled with your favorites ~~~" Margin="10,190,10,212" Foreground="#394240" Background="Transparent" FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Center"/>
-        
+        <Label Content="Some boards filled with your favorites ~~~" Margin="10,190,10,209" Foreground="#FFFEFFFF" Background="Transparent" FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Center"/>
+
         <Button Content="" Margin="35,395,281,10" Click="Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Multimedia__28114_29.jpg"/>
             </Button.Background>
         </Button>
-        <Button Content="" Margin="154,396,158,11" Click="Button_Click_1">
+        <Button Content="" Margin="152,395,163,11" Click="Button_Click_1">
             <Button.Background>
                 <ImageBrush ImageSource="/book-read-library-study-line-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg"/>
             </Button.Background>
         </Button>
-        <Button Content="" Margin="273,395,37,11" Foreground="#394240" BorderBrush="#394240" Click="Button_Click_2">
+        <Button Content="" Margin="273,395,45,11" Foreground="#394240" BorderBrush="#394240" Click="Button_Click_2">
             <Button.Background>
                 <ImageBrush ImageSource="/magnifying-glass-icon-isolated-on-white-background-search-illustration-vector.jpg"/>
             </Button.Background>
@@ -36,5 +36,10 @@
         <Image Height="100" Width="100" Margin="10,70,240,270"/>
         <Image Height="100" Width="100" Margin="120,70,130,270"/>
         <Image Height="100" Width="100" Margin="230,70,20,270"/>
+        <Button Content="" Margin="315,10,10,400" Click="Button_Click_3">
+            <Button.Background>
+                <ImageBrush ImageSource="/settings-icon-2048x2046-cw28eevx.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

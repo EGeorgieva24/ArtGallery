@@ -13,12 +13,12 @@
         <TextBlock Text="~ Sign up to start listening ~" Margin="0,59,0,0" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Width="287" Foreground="#FF040000" FontFamily="SimSun"/>
 
         <StackPanel Margin="42,106,40,62">
-            <TextBox x:Name="txtUsername" Text="Username" Foreground="Gray" Background="#FFE5D7B7" Margin="0,0,0,10"/>
-            <TextBox x:Name="txtEmail" Text="Email" Foreground="Gray" Background="#FFE5D7B7" Margin="0,0,0,10"/>
-            <TextBox x:Name="txtPassword" Text="Password" Foreground="Gray" Background="#FFE5D7B7" Margin="0,0,0,10"/>
+            <TextBox x:Name="txtUsername" Text="Username" Foreground="Gray" Background="#FFEDDDCE" Margin="0,0,0,10"/>
+            <TextBox x:Name="txtEmail" Text="Email" Foreground="Gray" Background="#FFEDDDCE" Margin="0,0,0,10"/>
+            <TextBox x:Name="txtPassword" Text="Password" Foreground="Gray" Background="#FFEDDDCE" Margin="0,0,0,10"/>
         </StackPanel>
 
-        <Button Content="Sign Up" Click="SignUpButton_Click" Width="128" Height="30" Foreground="#FF040000" Background="#FFD8CABD" Margin="0,220,0,0"/>
+        <Button Content="Sign Up" Click="SignUpButton_Click" Width="128" Height="30" Foreground="#FF040000" Background="#FFEDDDCE" Margin="0,220,0,0"/>
 
         <TextBlock x:Name="lblMessage" Text="" Foreground="Red" Margin="0,290,20,0" Height="13" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
             <TextBlock.RenderTransform>
